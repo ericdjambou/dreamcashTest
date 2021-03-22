@@ -1,0 +1,41 @@
+package com.donatien.test.security;
+
+import org.springframework.stereotype.Component;
+
+/**
+ * @author donatien
+ * @created 20/03/2021 - 1:28 PM
+ * @project test
+ */
+
+@Component
+public class JwtUser {
+
+    private String userName;
+    private long id;
+    private String role;
+
+    public void setUserName(String userName) {
+        this.userName = userName;
+    }
+
+    public void setId(long id) {
+        this.id = id;
+    }
+
+    public void setRole(String role) {
+        this.role = role;
+    }
+
+    public String getUserName() {
+        return userName;
+    }
+
+    public long getId() {
+        return id;
+    }
+
+    public String getRole() {
+        return role;
+    }
+}
